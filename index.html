@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Explore Maharashtra – Discover the Land of Legends</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Mukta:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body id="top">
+<header><div class="wrap"><a class="logo" href="#top">🧭 Explore Maharashtra</a>
+<nav id="nav"><a href="#destinations" data-i="nDest"></a><a href="#planner" data-i="nPlan"></a><a href="#blog" data-i="nBlog"></a><a href="#gallery" data-i="nGal"></a><a href="#contact" data-i="nCon"></a></nav>
+<div class="tools"><button id="fv" aria-label="Favourites">♥ <b id="fc">0</b></button><button id="lg">मराठी</button><button id="mb" aria-label="Menu">☰</button></div></div></header>
+
+<main>
+<div class="hero"><svg class="sky" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle class="sunrise" cx="900" cy="250" r="110" fill="#ffe3a3" opacity=".22"/><circle class="sunrise" cx="900" cy="250" r="64" fill="#ffe3a3" opacity=".92"/><g class="cl"><ellipse cx="220" cy="120" rx="90" ry="20" fill="#fff" opacity=".35"/><ellipse cx="290" cy="105" rx="55" ry="18" fill="#fff" opacity=".35"/></g><g class="cl" style="animation-duration:20s"><ellipse cx="700" cy="80" rx="80" ry="16" fill="#fff" opacity=".3"/></g><g transform="translate(0 150)"><path class="bd" d="M0 0q8-10 16 0q8-10 16 0" fill="none" stroke="#3a1d0e" stroke-width="3" stroke-linecap="round"/></g><g transform="translate(0 200)"><path class="bd" style="animation-delay:-6s" d="M0 0q8-10 16 0q8-10 16 0" fill="none" stroke="#3a1d0e" stroke-width="3" stroke-linecap="round"/></g><g transform="translate(0 110)"><path class="bd" style="animation-delay:-12s" d="M0 0q8-10 16 0q8-10 16 0" fill="none" stroke="#3a1d0e" stroke-width="3" stroke-linecap="round"/></g></svg><svg viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true"><path d="M0 400V250l120-70 90 60 140-110 100 90 120-80 140 120 110-90 130 100 120-60 130 90v200z" fill="#7a3d22" opacity=".55"/><path d="M0 400V300l150-60 80 40 130-90 120 80 150-50 100 70 140-80 130 90 200-40v140z" fill="#1d4a37"/><path d="M560 190h80v-20h-10v-14h-12v14h-14v-14h-12v14h-14v-14h-12v14h-6z" fill="#14281f"/></svg>
+<div class="wrap"><h1 data-i="h1"></h1><p data-i="sub"></p>
+<form class="sb" id="hs" role="search"><input id="hq" data-ph="ph" aria-label="Search destinations"><button class="btn" data-i="btn"></button></form></div></div>
+
+<section id="destinations"><div class="wrap">
+<h2 data-i="nDest"></h2>
+<div class="cats" id="cats"></div>
+<div class="filters"><input id="q" data-ph="ph" aria-label="Search"><select id="zf"></select><select id="bf"></select><button class="ghost" id="fo"></button></div>
+<div class="grid" id="list" aria-live="polite"></div></div></section>
+
+<section class="dark" id="featured"><div class="wrap"><h2 data-i="rec"></h2><p class="mut" data-i="recs"></p>
+<div class="grid" id="rec"></div></div></section>
+
+<section id="planner"><div class="wrap"><h2 data-i="nPlan"></h2><div class="two"><div class="pl">
+<label data-i="start"></label><select id="ps"><option>Mumbai</option><option>Pune</option><option>Nashik</option><option>Nagpur</option><option>Kolhapur</option><option>Chhatrapati Sambhajinagar</option></select>
+<div class="row"><div><label data-i="days"></label><input id="pd" type="number" min="1" max="10" value="3"></div><div><label data-i="trav"></label><input id="pt" type="number" min="1" max="20" value="2"></div><div><label data-i="bud"></label><input id="pb" type="number" min="0" step="500" value="15000"></div></div>
+<label data-i="int"></label><div class="chips" id="pi"></div>
+<label data-i="pls"></label><div class="chips" id="pp"></div>
+<label data-i="rates"></label><div class="row"><input id="rs" type="number" min="0" value="1500" aria-label="Stay"><input id="rf" type="number" min="0" value="500" aria-label="Food"><input id="rt" type="number" min="0" value="1200" aria-label="Transport"></div>
+<p class="mut" data-i="ratesn"></p><button class="btn" id="gen" data-i="gen"></button></div>
+<div class="pl" id="out" aria-live="polite"><p class="mut" data-i="outh"></p></div></div></div></section>
+
+<section id="blog" class="dark"><div class="wrap"><h2 data-i="nBlog"></h2><div class="grid" id="bl"></div></div></section>
+
+<section id="gallery"><div class="wrap"><h2 data-i="nGal"></h2><div class="grid" id="gl"></div>
+<h3 style="margin-top:40px" data-i="tipsh"></h3><div class="grid" id="tp"></div></div></section>
+
+<section id="contact" class="dark"><div class="wrap two"><form class="stack" id="cf" novalidate><h2 data-i="nCon"></h2>
+<input id="cn" placeholder="Name" aria-label="Name" style="width:100%"><input id="ce" type="email" placeholder="Email" aria-label="Email" style="width:100%"><textarea id="cm" rows="4" placeholder="Message" aria-label="Message" style="width:100%"></textarea>
+<button class="btn" data-i="send"></button><p id="cs" role="status"></p></form>
+<form class="stack" id="ff" novalidate><h2 data-i="fbh"></h2><select id="fr" aria-label="Rating"><option value="5">★★★★★</option><option value="4">★★★★</option><option value="3">★★★</option><option value="2">★★</option><option value="1">★</option></select>
+<input id="fn" placeholder="Name" aria-label="Name" style="width:100%"><textarea id="ft" rows="3" aria-label="Feedback" style="width:100%"></textarea><button class="btn" data-i="send"></button><p id="fs" role="status"></p><div id="fl"></div></form></div></section>
+</main>
+
+<footer><div class="wrap"><h3>🧭 Explore Maharashtra</h3><p>Discover the Land of Legends.</p>
+<p>Email: <a href="mailto:hello@example.com">hello@example.com</a> (placeholder) · Follow: <a href="#top">Instagram</a>, <a href="#top">YouTube</a>, <a href="#top">Facebook</a> (add your own links)</p>
+<p class="mut" data-i="disc"></p></div></footer>
+
+<div id="dv" role="dialog" aria-modal="true" aria-label="Destination details"></div>
+
+<script src="js/app.js"></script></body></html>
